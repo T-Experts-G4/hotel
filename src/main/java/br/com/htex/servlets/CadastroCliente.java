@@ -19,7 +19,7 @@ public class CadastroCliente extends HttpServlet{
 
 
 			System.out.println("Estou na servlet");
-			EntityManager em = JPAFactory.getEntityManager();
+			//EntityManager em = JPAFactory.getEntityManager();
 			System.out.println("bd conect");
 			
 			RequestDispatcher reqDispatcher = req.getRequestDispatcher("cadastrocliente.jsp");

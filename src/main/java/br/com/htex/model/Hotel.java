@@ -13,12 +13,12 @@ public class Hotel {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private String nome;
-	private Endereco endereco;
+	//private Endereco endereco;
 	
-	public Hotel(String nome, Endereco endereco) {
+	public Hotel(String nome) {
 		super();
 		this.nome = nome;
-		this.endereco = endereco;
+		//this.endereco = endereco;
 	}
 
 	public Hotel() {
@@ -41,13 +41,13 @@ public class Hotel {
 		this.nome = nome;
 	}
 
-	public Endereco getEndereco() {
-		return endereco;
-	}
-
-	public void setEndereco(Endereco endereco) {
-		this.endereco = endereco;
-	}
-	
+//	public Endereco getEndereco() {
+//		return endereco;
+//	}
+//
+//	public void setEndereco(Endereco endereco) {
+//		this.endereco = endereco;
+//	}
+//	
 	
 }

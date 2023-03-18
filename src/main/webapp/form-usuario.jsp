@@ -3,6 +3,17 @@
 <!DOCTYPE html>
 <html>
 <body>
-	<h3></h3>
+	<h3>Cadastra Usuarios</h3>
+	<form action="/hotel/cadastrausuario" method="post">
+	
+	<label for="user"><b>Usuário:</b> </label>
+	<input type="text" name="user"><br /><br/>
+	<label for="password"><b>Senha:</b> </label>
+	<input type="password" name="password"><br /><br />
+	<button>Cadastrar</button>
+	<br />
+	<a href="/hotel">Voltar</a>
+	
+	</form>
 </body>
 </html>
