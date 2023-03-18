@@ -17,34 +17,30 @@ public class Cliente {
 	private Integer id;
 	private String nome;
 	private String email;
-	@Enumerated(EnumType.ORDINAL)
-	@OneToOne
-	private Usuario usuario;
-	@Enumerated(EnumType.ORDINAL)
-	@ManyToOne
-	private Endereco endereco;
+//	@OneToOne
+//	private Integer usuario;
 	
-	public Cliente(Integer id, String nome, String email, Usuario usuario, Endereco endereco) {
+	
+	public Cliente(Integer id, String nome, String email) {
 
 		this.id = id;
 		this.nome = nome;
 		this.email = email;
-		this.usuario = usuario;
-		this.endereco = endereco;
+		//this.usuario = usuario;
+		
 	}
 
-	public Cliente(String nome, String email, Usuario usuario, Endereco endereco) {
+	public Cliente(String nome, String email) {
 
 		this.nome = nome;
 		this.email = email;
-		this.usuario = usuario;
-		this.endereco = endereco;
+		//this.usuario = usuario;
 	}
 
 	@Override
 	public String toString() {
-		return "Cliente [id=" + id + ", nome=" + nome + ", email=" + email + ", usuario=" + usuario + ", endereco="
-				+ endereco + "]";
+		return "Cliente [id=" + id + ", nome=" + nome + ", email=" + email + ", usuario="  + ", endereco="
+				+ "]";
 	}
 	
 }
