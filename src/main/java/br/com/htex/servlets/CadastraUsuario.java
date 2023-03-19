@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/cadastrausuario")
+@WebServlet("/cadastraUsuario")
 public class CadastraUsuario extends HttpServlet{
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -25,5 +25,7 @@ public class CadastraUsuario extends HttpServlet{
 		UsuarioDao usuarioDao = new UsuarioDao();
 		System.out.println(usuario);
 		usuarioDao.cadastra(usuario);
+		
+		resp.sendRedirect("listaUsuarios");
 	}
 }
