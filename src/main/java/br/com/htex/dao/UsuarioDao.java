@@ -47,5 +47,15 @@ public class UsuarioDao {
 		return usuario;
 		
 		}
+	
+	public void atualiza(Usuario usuario) {
+		EntityManager em = JPAFactory.getEntityManager();
+
+		em.getTransaction().begin();
+		em.merge(usuario);
+		em.getTransaction().commit();
+
+		em.close();
+	}
 
 }
