@@ -1,9 +1,9 @@
 package br.com.htex.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity(name = "users" )
 public class Usuario {
@@ -16,11 +16,11 @@ public class Usuario {
 	
 	public Usuario() {}
 	
-//	public Usuario(Integer id, String user, String password) {
-//		this.id = id;
-//		this.user = user;
-//		this.password = password;
-//	}
+	public Usuario(Integer id, String user, String password) {
+		this.id = id;
+		this.user = user;
+		this.password = password;
+	}
 
 	public Usuario(String user, String password) {
 		this.user = user;

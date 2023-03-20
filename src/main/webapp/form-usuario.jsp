@@ -12,8 +12,8 @@
 	<input type="password" name="password"><br /><br />
 	<button>Cadastrar</button>
 	<br />
-	<a href="/hotel">Voltar</a>
 	
+	<a href="/hotel/listaUsuarios">Voltar</a>
 	</form>
 </body>
 </html>

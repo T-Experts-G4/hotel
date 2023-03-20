@@ -25,5 +25,7 @@ public class CadastraUsuario extends HttpServlet{
 		UsuarioDao usuarioDao = new UsuarioDao();
 		System.out.println(usuario);
 		usuarioDao.cadastra(usuario);
+		
+		resp.sendRedirect("listaUsuarios");
 	}
 }
