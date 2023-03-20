@@ -17,7 +17,7 @@
 					<a href="/hotel/buscaUsuario?id=${user.id}">
 						${user.user}
 					</a></h3>
-						<a href="#">Editar</a> 
+						<a href="/hotel/buscaUsuario?id=${user.id}">Editar</a> 
 					- <a href="/hotel/removeUser?id=${user.id}">
 						Excluir
 					</a></li>
