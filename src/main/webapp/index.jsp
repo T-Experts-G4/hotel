@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>Hotel Tex JSP</h1>
-	
+
 	<a href="/hotel/formUsuario">Adicionar Novo Usuario</a>
 </body>
 </html>
