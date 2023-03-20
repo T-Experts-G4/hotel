@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
+
 import br.com.htex.model.Usuario;
 import br.com.htex.util.JPAFactory;
 
@@ -19,6 +20,7 @@ public class UsuarioDao {
 		em.close();
 
 		}
+
 	
 	public  Usuario buscarId(Integer id) {
 		EntityManager em = JPAFactory.getEntityManager();
@@ -47,5 +49,6 @@ public class UsuarioDao {
 		return usuario;
 		
 		}
+
 
 }
